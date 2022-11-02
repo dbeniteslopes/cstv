@@ -26,8 +26,11 @@ class MatchesViewModel: ObservableObject {
                 case .finished:
                     print("finished")
                 }
-            } receiveValue: { games in
-                self.matches.append(contentsOf: games)
+            } receiveValue: { matches in
+                let filtered = matches.filter { m in
+                    !m.opponents.isEmpty
+                }
+                self.matches.append(contentsOf: filtered)
                 self.currentPage += 1
             }
     }
