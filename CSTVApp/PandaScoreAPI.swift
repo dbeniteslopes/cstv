@@ -28,8 +28,3 @@ class PandaScoreAPI {
             .eraseToAnyPublisher()
     }
 }
-
-struct Match: Decodable, Identifiable {
-    let id: Int
-    let name: String
-}

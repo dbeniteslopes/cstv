@@ -15,6 +15,7 @@
 		F1AF7AE32912EE1F00CEFFBB /* MatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AE22912EE1F00CEFFBB /* MatchesView.swift */; };
 		F1AF7AE52912F1BF00CEFFBB /* PandaScoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AE42912F1BF00CEFFBB /* PandaScoreAPI.swift */; };
 		F1AF7AE72912F26300CEFFBB /* MatchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AE62912F26300CEFFBB /* MatchesViewModel.swift */; };
+		F1AF7AE92912F3B300CEFFBB /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AE82912F3B300CEFFBB /* Match.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F1AF7AE22912EE1F00CEFFBB /* MatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesView.swift; sourceTree = "<group>"; };
 		F1AF7AE42912F1BF00CEFFBB /* PandaScoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaScoreAPI.swift; sourceTree = "<group>"; };
 		F1AF7AE62912F26300CEFFBB /* MatchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewModel.swift; sourceTree = "<group>"; };
+		F1AF7AE82912F3B300CEFFBB /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				F1AF7AB82912ECE400CEFFBB /* CSTVAppApp.swift */,
 				F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */,
+				F1AF7AE82912F3B300CEFFBB /* Match.swift */,
 				F1AF7AE22912EE1F00CEFFBB /* MatchesView.swift */,
 				F1AF7AE42912F1BF00CEFFBB /* PandaScoreAPI.swift */,
 				F1AF7AE62912F26300CEFFBB /* MatchesViewModel.swift */,
@@ -211,6 +214,7 @@
 				F1AF7AE32912EE1F00CEFFBB /* MatchesView.swift in Sources */,
 				F1AF7AE52912F1BF00CEFFBB /* PandaScoreAPI.swift in Sources */,
 				F1AF7AB92912ECE400CEFFBB /* CSTVAppApp.swift in Sources */,
+				F1AF7AE92912F3B300CEFFBB /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
