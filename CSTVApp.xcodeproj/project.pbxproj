@@ -12,19 +12,10 @@
 		F1AF7ABD2912ECE600CEFFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AF7ABC2912ECE600CEFFBB /* Assets.xcassets */; };
 		F1AF7AC02912ECE600CEFFBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AF7ABF2912ECE600CEFFBB /* Preview Assets.xcassets */; };
 		F1AF7ACA2912ECE700CEFFBB /* CSTVAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AC92912ECE700CEFFBB /* CSTVAppTests.swift */; };
-		F1AF7AD42912ECE700CEFFBB /* CSTVAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AD32912ECE700CEFFBB /* CSTVAppUITests.swift */; };
-		F1AF7AD62912ECE700CEFFBB /* CSTVAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AD52912ECE700CEFFBB /* CSTVAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F1AF7AC62912ECE700CEFFBB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F1AF7AAD2912ECE400CEFFBB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F1AF7AB42912ECE400CEFFBB;
-			remoteInfo = CSTVApp;
-		};
-		F1AF7AD02912ECE700CEFFBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F1AF7AAD2912ECE400CEFFBB /* Project object */;
 			proxyType = 1;
@@ -41,9 +32,6 @@
 		F1AF7ABF2912ECE600CEFFBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1AF7AC52912ECE700CEFFBB /* CSTVAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSTVAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AF7AC92912ECE700CEFFBB /* CSTVAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVAppTests.swift; sourceTree = "<group>"; };
-		F1AF7ACF2912ECE700CEFFBB /* CSTVAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSTVAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1AF7AD32912ECE700CEFFBB /* CSTVAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVAppUITests.swift; sourceTree = "<group>"; };
-		F1AF7AD52912ECE700CEFFBB /* CSTVAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1AF7ACC2912ECE700CEFFBB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +57,6 @@
 			children = (
 				F1AF7AB72912ECE400CEFFBB /* CSTVApp */,
 				F1AF7AC82912ECE700CEFFBB /* CSTVAppTests */,
-				F1AF7AD22912ECE700CEFFBB /* CSTVAppUITests */,
 				F1AF7AB62912ECE400CEFFBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +66,6 @@
 			children = (
 				F1AF7AB52912ECE400CEFFBB /* CSTVApp.app */,
 				F1AF7AC52912ECE700CEFFBB /* CSTVAppTests.xctest */,
-				F1AF7ACF2912ECE700CEFFBB /* CSTVAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +95,6 @@
 				F1AF7AC92912ECE700CEFFBB /* CSTVAppTests.swift */,
 			);
 			path = CSTVAppTests;
-			sourceTree = "<group>";
-		};
-		F1AF7AD22912ECE700CEFFBB /* CSTVAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F1AF7AD32912ECE700CEFFBB /* CSTVAppUITests.swift */,
-				F1AF7AD52912ECE700CEFFBB /* CSTVAppUITestsLaunchTests.swift */,
-			);
-			path = CSTVAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +135,6 @@
 			productReference = F1AF7AC52912ECE700CEFFBB /* CSTVAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F1AF7ACE2912ECE700CEFFBB /* CSTVAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F1AF7ADF2912ECE700CEFFBB /* Build configuration list for PBXNativeTarget "CSTVAppUITests" */;
-			buildPhases = (
-				F1AF7ACB2912ECE700CEFFBB /* Sources */,
-				F1AF7ACC2912ECE700CEFFBB /* Frameworks */,
-				F1AF7ACD2912ECE700CEFFBB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F1AF7AD12912ECE700CEFFBB /* PBXTargetDependency */,
-			);
-			name = CSTVAppUITests;
-			productName = CSTVAppUITests;
-			productReference = F1AF7ACF2912ECE700CEFFBB /* CSTVAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +149,6 @@
 						CreatedOnToolsVersion = 13.3.1;
 					};
 					F1AF7AC42912ECE700CEFFBB = {
-						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = F1AF7AB42912ECE400CEFFBB;
-					};
-					F1AF7ACE2912ECE700CEFFBB = {
 						CreatedOnToolsVersion = 13.3.1;
 						TestTargetID = F1AF7AB42912ECE400CEFFBB;
 					};
@@ -221,7 +169,6 @@
 			targets = (
 				F1AF7AB42912ECE400CEFFBB /* CSTVApp */,
 				F1AF7AC42912ECE700CEFFBB /* CSTVAppTests */,
-				F1AF7ACE2912ECE700CEFFBB /* CSTVAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,13 +184,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F1AF7AC32912ECE700CEFFBB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1AF7ACD2912ECE700CEFFBB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,15 +210,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1AF7ACB2912ECE700CEFFBB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F1AF7AD62912ECE700CEFFBB /* CSTVAppUITestsLaunchTests.swift in Sources */,
-				F1AF7AD42912ECE700CEFFBB /* CSTVAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +217,6 @@
 			isa = PBXTargetDependency;
 			target = F1AF7AB42912ECE400CEFFBB /* CSTVApp */;
 			targetProxy = F1AF7AC62912ECE700CEFFBB /* PBXContainerItemProxy */;
-		};
-		F1AF7AD12912ECE700CEFFBB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F1AF7AB42912ECE400CEFFBB /* CSTVApp */;
-			targetProxy = F1AF7AD02912ECE700CEFFBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -507,42 +433,6 @@
 			};
 			name = Release;
 		};
-		F1AF7AE02912ECE700CEFFBB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 64L272LLTA;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.dbeniteslopes.CSTVAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CSTVApp;
-			};
-			name = Debug;
-		};
-		F1AF7AE12912ECE700CEFFBB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 64L272LLTA;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.dbeniteslopes.CSTVAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CSTVApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,15 +459,6 @@
 			buildConfigurations = (
 				F1AF7ADD2912ECE700CEFFBB /* Debug */,
 				F1AF7ADE2912ECE700CEFFBB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F1AF7ADF2912ECE700CEFFBB /* Build configuration list for PBXNativeTarget "CSTVAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F1AF7AE02912ECE700CEFFBB /* Debug */,
-				F1AF7AE12912ECE700CEFFBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
