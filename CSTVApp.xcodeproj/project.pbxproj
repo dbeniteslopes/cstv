@@ -16,6 +16,9 @@
 		F1AF7AE52912F1BF00CEFFBB /* PandaScoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AE42912F1BF00CEFFBB /* PandaScoreAPI.swift */; };
 		F1AF7AE72912F26300CEFFBB /* MatchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AE62912F26300CEFFBB /* MatchesViewModel.swift */; };
 		F1AF7AE92912F3B300CEFFBB /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AE82912F3B300CEFFBB /* Match.swift */; };
+		F1AF7AEB2912F59900CEFFBB /* Opponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AEA2912F59900CEFFBB /* Opponent.swift */; };
+		F1AF7AED2912F5AD00CEFFBB /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AEC2912F5AD00CEFFBB /* League.swift */; };
+		F1AF7AEF2912F5BB00CEFFBB /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AEE2912F5BB00CEFFBB /* Serie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		F1AF7AE42912F1BF00CEFFBB /* PandaScoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaScoreAPI.swift; sourceTree = "<group>"; };
 		F1AF7AE62912F26300CEFFBB /* MatchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewModel.swift; sourceTree = "<group>"; };
 		F1AF7AE82912F3B300CEFFBB /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		F1AF7AEA2912F59900CEFFBB /* Opponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opponent.swift; sourceTree = "<group>"; };
+		F1AF7AEC2912F5AD00CEFFBB /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		F1AF7AEE2912F5BB00CEFFBB /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,9 @@
 				F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */,
 				F1AF7AE82912F3B300CEFFBB /* Match.swift */,
 				F1AF7AE22912EE1F00CEFFBB /* MatchesView.swift */,
+				F1AF7AEA2912F59900CEFFBB /* Opponent.swift */,
+				F1AF7AEE2912F5BB00CEFFBB /* Serie.swift */,
+				F1AF7AEC2912F5AD00CEFFBB /* League.swift */,
 				F1AF7AE42912F1BF00CEFFBB /* PandaScoreAPI.swift */,
 				F1AF7AE62912F26300CEFFBB /* MatchesViewModel.swift */,
 				F1AF7ABC2912ECE600CEFFBB /* Assets.xcassets */,
@@ -211,8 +220,11 @@
 			files = (
 				F1AF7ABB2912ECE400CEFFBB /* ContentView.swift in Sources */,
 				F1AF7AE72912F26300CEFFBB /* MatchesViewModel.swift in Sources */,
+				F1AF7AED2912F5AD00CEFFBB /* League.swift in Sources */,
+				F1AF7AEB2912F59900CEFFBB /* Opponent.swift in Sources */,
 				F1AF7AE32912EE1F00CEFFBB /* MatchesView.swift in Sources */,
 				F1AF7AE52912F1BF00CEFFBB /* PandaScoreAPI.swift in Sources */,
+				F1AF7AEF2912F5BB00CEFFBB /* Serie.swift in Sources */,
 				F1AF7AB92912ECE400CEFFBB /* CSTVAppApp.swift in Sources */,
 				F1AF7AE92912F3B300CEFFBB /* Match.swift in Sources */,
 			);

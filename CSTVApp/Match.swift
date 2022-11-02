@@ -10,4 +10,7 @@ import Foundation
 struct Match: Decodable, Identifiable {
     let id: Int
     let name: String
+    let opponents: [Opponent]
+    let league: League
+    let serie: Serie
 }

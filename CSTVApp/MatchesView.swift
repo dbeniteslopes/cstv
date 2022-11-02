@@ -25,8 +25,8 @@ struct MatchesView: View {
                 bgColor.ignoresSafeArea()
                 
                 VStack {
-                    ForEach(viewModel.matches, id: \.id) {
-                        Text($0.name).foregroundColor(.white)
+                    ForEach(viewModel.matches, id: \.id) { m in
+                        Text(m.name).foregroundColor(.white)
                     }
                 }
                 .onAppear(perform: viewModel.loadMatches)
