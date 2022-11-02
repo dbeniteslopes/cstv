@@ -48,22 +48,22 @@ struct MatchesView_Previews: PreviewProvider {
     }
 }
 
+func getDateFrom(_ dateString: String) -> Date? {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+    dateFormatter.timeZone = TimeZone.current
+    dateFormatter.locale = Locale.current
+    return dateFormatter.date(from: dateString)
+}
+
 struct MatchCard: View {
     let match: Match
+    
     var body: some View {
         VStack(spacing: 0) {
             HStack {
                 Spacer()
-                
-                Text("AGORA")
-                    .foregroundColor(.white)
-                    .font(.caption)
-                    .frame(height: 25)
-                    .padding(.horizontal, 8)
-                    .background(
-                        CustomRoundedRectangle(corners: [.topRight, .bottomLeft], cornerRadius: 16)
-                            .fill(.red)
-                    )
+                MatchTimeView(date: getDateFrom(match.scheduledAt))
             }
             
             HStack(spacing: 12) {

@@ -11,7 +11,7 @@ import Combine
 class MatchesViewModel: ObservableObject {
     @Published var matches: [Match] = []
     @Published var isRequestFailed = false
-    private let pageLimit = 10
+    private let pageLimit = 30
     private var currentPage: Int = 1
     private var cancellable: AnyCancellable?
     
@@ -31,6 +31,9 @@ class MatchesViewModel: ObservableObject {
                     !m.opponents.isEmpty
                 }
                 self.matches.append(contentsOf: filtered)
+                self.matches.sort { (m1, m2) in
+                    m1.scheduledAt < m2.scheduledAt
+                }
                 self.currentPage += 1
             }
     }

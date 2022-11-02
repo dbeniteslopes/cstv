@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F137A8CA29133A8700BA7FE1 /* MatchTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8C929133A8700BA7FE1 /* MatchTimeView.swift */; };
 		F1AF7AB92912ECE400CEFFBB /* CSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AB82912ECE400CEFFBB /* CSTVApp.swift */; };
 		F1AF7ABB2912ECE400CEFFBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */; };
 		F1AF7ABD2912ECE600CEFFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AF7ABC2912ECE600CEFFBB /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F137A8C929133A8700BA7FE1 /* MatchTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTimeView.swift; sourceTree = "<group>"; };
 		F1AF7AB52912ECE400CEFFBB /* CSTVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AF7AB82912ECE400CEFFBB /* CSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVApp.swift; sourceTree = "<group>"; };
 		F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */,
 				F1AF7AE82912F3B300CEFFBB /* Match.swift */,
 				F1AF7AE22912EE1F00CEFFBB /* MatchesView.swift */,
+				F137A8C929133A8700BA7FE1 /* MatchTimeView.swift */,
 				F1AF7AEA2912F59900CEFFBB /* Opponent.swift */,
 				F1AF7AEE2912F5BB00CEFFBB /* Serie.swift */,
 				F1AF7AEC2912F5AD00CEFFBB /* League.swift */,
@@ -221,6 +224,7 @@
 				F1AF7ABB2912ECE400CEFFBB /* ContentView.swift in Sources */,
 				F1AF7AE72912F26300CEFFBB /* MatchesViewModel.swift in Sources */,
 				F1AF7AED2912F5AD00CEFFBB /* League.swift in Sources */,
+				F137A8CA29133A8700BA7FE1 /* MatchTimeView.swift in Sources */,
 				F1AF7AEB2912F59900CEFFBB /* Opponent.swift in Sources */,
 				F1AF7AE32912EE1F00CEFFBB /* MatchesView.swift in Sources */,
 				F1AF7AE52912F1BF00CEFFBB /* PandaScoreAPI.swift in Sources */,
@@ -377,8 +381,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,9 +390,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.dbeniteslopes.CSTVApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -406,8 +413,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -415,9 +422,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.dbeniteslopes.CSTVApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
