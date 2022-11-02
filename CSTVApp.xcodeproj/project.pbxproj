@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F1AF7AB92912ECE400CEFFBB /* CSTVAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AB82912ECE400CEFFBB /* CSTVAppApp.swift */; };
+		F1AF7AB92912ECE400CEFFBB /* CSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AB82912ECE400CEFFBB /* CSTVApp.swift */; };
 		F1AF7ABB2912ECE400CEFFBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */; };
 		F1AF7ABD2912ECE600CEFFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AF7ABC2912ECE600CEFFBB /* Assets.xcassets */; };
 		F1AF7AC02912ECE600CEFFBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AF7ABF2912ECE600CEFFBB /* Preview Assets.xcassets */; };
@@ -33,7 +33,7 @@
 
 /* Begin PBXFileReference section */
 		F1AF7AB52912ECE400CEFFBB /* CSTVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1AF7AB82912ECE400CEFFBB /* CSTVAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVAppApp.swift; sourceTree = "<group>"; };
+		F1AF7AB82912ECE400CEFFBB /* CSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVApp.swift; sourceTree = "<group>"; };
 		F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1AF7ABC2912ECE600CEFFBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1AF7ABF2912ECE600CEFFBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		F1AF7AB72912ECE400CEFFBB /* CSTVApp */ = {
 			isa = PBXGroup;
 			children = (
-				F1AF7AB82912ECE400CEFFBB /* CSTVAppApp.swift */,
+				F1AF7AB82912ECE400CEFFBB /* CSTVApp.swift */,
 				F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */,
 				F1AF7AE82912F3B300CEFFBB /* Match.swift */,
 				F1AF7AE22912EE1F00CEFFBB /* MatchesView.swift */,
@@ -225,7 +225,7 @@
 				F1AF7AE32912EE1F00CEFFBB /* MatchesView.swift in Sources */,
 				F1AF7AE52912F1BF00CEFFBB /* PandaScoreAPI.swift in Sources */,
 				F1AF7AEF2912F5BB00CEFFBB /* Serie.swift in Sources */,
-				F1AF7AB92912ECE400CEFFBB /* CSTVAppApp.swift in Sources */,
+				F1AF7AB92912ECE400CEFFBB /* CSTVApp.swift in Sources */,
 				F1AF7AE92912F3B300CEFFBB /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

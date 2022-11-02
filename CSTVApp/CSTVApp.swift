@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct CSTVAppApp: App {
+struct CSTVApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MatchesView()
         }
     }
 }
