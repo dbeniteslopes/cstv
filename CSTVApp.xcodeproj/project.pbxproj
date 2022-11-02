@@ -13,6 +13,8 @@
 		F1AF7AC02912ECE600CEFFBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AF7ABF2912ECE600CEFFBB /* Preview Assets.xcassets */; };
 		F1AF7ACA2912ECE700CEFFBB /* CSTVAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AC92912ECE700CEFFBB /* CSTVAppTests.swift */; };
 		F1AF7AE32912EE1F00CEFFBB /* MatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AE22912EE1F00CEFFBB /* MatchesView.swift */; };
+		F1AF7AE52912F1BF00CEFFBB /* PandaScoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AE42912F1BF00CEFFBB /* PandaScoreAPI.swift */; };
+		F1AF7AE72912F26300CEFFBB /* MatchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AE62912F26300CEFFBB /* MatchesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		F1AF7AC52912ECE700CEFFBB /* CSTVAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSTVAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AF7AC92912ECE700CEFFBB /* CSTVAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVAppTests.swift; sourceTree = "<group>"; };
 		F1AF7AE22912EE1F00CEFFBB /* MatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesView.swift; sourceTree = "<group>"; };
+		F1AF7AE42912F1BF00CEFFBB /* PandaScoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaScoreAPI.swift; sourceTree = "<group>"; };
+		F1AF7AE62912F26300CEFFBB /* MatchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				F1AF7AB82912ECE400CEFFBB /* CSTVAppApp.swift */,
 				F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */,
 				F1AF7AE22912EE1F00CEFFBB /* MatchesView.swift */,
+				F1AF7AE42912F1BF00CEFFBB /* PandaScoreAPI.swift */,
+				F1AF7AE62912F26300CEFFBB /* MatchesViewModel.swift */,
 				F1AF7ABC2912ECE600CEFFBB /* Assets.xcassets */,
 				F1AF7ABE2912ECE600CEFFBB /* Preview Content */,
 			);
@@ -201,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1AF7ABB2912ECE400CEFFBB /* ContentView.swift in Sources */,
+				F1AF7AE72912F26300CEFFBB /* MatchesViewModel.swift in Sources */,
 				F1AF7AE32912EE1F00CEFFBB /* MatchesView.swift in Sources */,
+				F1AF7AE52912F1BF00CEFFBB /* PandaScoreAPI.swift in Sources */,
 				F1AF7AB92912ECE400CEFFBB /* CSTVAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

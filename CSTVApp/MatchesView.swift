@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MatchesView: View {
+    @ObservedObject private var viewModel = MatchesViewModel()
+    
     private var bgColor = Color(red: 0.086, green: 0.086, blue: 0.129) // #161621
     
     init() {
@@ -21,6 +23,13 @@ struct MatchesView: View {
         NavigationView {
             ZStack {
                 bgColor.ignoresSafeArea()
+                
+                VStack {
+                    ForEach(viewModel.matches, id: \.id) {
+                        Text($0.name).foregroundColor(.white)
+                    }
+                }
+                .onAppear(perform: viewModel.loadMatches)
             }
             .navigationTitle("Partidas")
             .navigationBarTitleDisplayMode(.large)
