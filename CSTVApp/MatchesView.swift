@@ -48,14 +48,6 @@ struct MatchesView_Previews: PreviewProvider {
     }
 }
 
-func getDateFrom(_ dateString: String) -> Date? {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-    dateFormatter.timeZone = TimeZone.current
-    dateFormatter.locale = Locale.current
-    return dateFormatter.date(from: dateString)
-}
-
 struct MatchCard: View {
     let match: Match
     
@@ -63,7 +55,7 @@ struct MatchCard: View {
         VStack(spacing: 0) {
             HStack {
                 Spacer()
-                MatchTimeView(date: getDateFrom(match.scheduledAt))
+                MatchTimeView(date: match.scheduledAt.toDate())
             }
             
             HStack(spacing: 12) {
@@ -132,11 +124,5 @@ struct CustomRoundedRectangle: Shape {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
         
         return Path(path.cgPath)
-    }
-}
-
-extension Optional where Wrapped == String {
-    var orEmpty: String {
-        return self ?? ""
     }
 }
