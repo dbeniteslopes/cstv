@@ -30,6 +30,20 @@ struct MatchDetailsView: View {
                 
                 matchTime
                 
+                HStack {
+                    VStack {
+                        ForEach(viewModel.firstTeamPlayers, id: \.id) { p in
+                            Text(p.nickname)
+                        }
+                    }
+                    
+                    VStack {
+                        ForEach(viewModel.secondTeamPlayers, id: \.id) { p in
+                            Text(p.nickname)
+                        }
+                    }
+                }
+                
                 Spacer()
                     .onAppear(perform: loadOpponents)
             }

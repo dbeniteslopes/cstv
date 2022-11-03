@@ -9,8 +9,8 @@ import SwiftUI
 import Combine
 
 class OpponentsViewModel: ObservableObject {
-    @Published var firstTeam: Team?
-    @Published var secondTeam: Team?
+    @Published var firstTeamPlayers: [Player] = []
+    @Published var secondTeamPlayers: [Player] = []
     @Published var isRequestFailed = false
     private var cancellable: AnyCancellable?
     
@@ -26,8 +26,8 @@ class OpponentsViewModel: ObservableObject {
                     print("finished")
                 }
             } receiveValue: { match in
-                self.firstTeam = match.opponents.first
-                self.secondTeam = match.opponents.last
+                self.firstTeamPlayers = match.opponents.first?.players ?? []
+                self.secondTeamPlayers = match.opponents.last?.players ?? []
             }
     }
 }
