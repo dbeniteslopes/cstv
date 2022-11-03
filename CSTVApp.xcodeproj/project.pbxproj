@@ -26,6 +26,7 @@
 		F1AF7AEF2912F5BB00CEFFBB /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AEE2912F5BB00CEFFBB /* Serie.swift */; };
 		F1F2AB3B29135037003877BF /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB3A29135037003877BF /* View+.swift */; };
 		F1F2AB3D291353A5003877BF /* MatchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB3C291353A5003877BF /* MatchDetailsView.swift */; };
+		F1F2AB3F29135CD8003877BF /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB3E29135CD8003877BF /* Date+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		F1AF7AEE2912F5BB00CEFFBB /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
 		F1F2AB3A29135037003877BF /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		F1F2AB3C291353A5003877BF /* MatchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsView.swift; sourceTree = "<group>"; };
+		F1F2AB3E29135CD8003877BF /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F137A8CC29133CA700BA7FE1 /* Optional+.swift */,
 				F137A8CE29133CB400BA7FE1 /* String+.swift */,
 				F1F2AB3A29135037003877BF /* View+.swift */,
+				F1F2AB3E29135CD8003877BF /* Date+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				F1AF7AEF2912F5BB00CEFFBB /* Serie.swift in Sources */,
 				F1AF7AB92912ECE400CEFFBB /* CSTVApp.swift in Sources */,
 				F137A8CF29133CB400BA7FE1 /* String+.swift in Sources */,
+				F1F2AB3F29135CD8003877BF /* Date+.swift in Sources */,
 				F137A8D529134A9000BA7FE1 /* MatchCardView.swift in Sources */,
 				F1F2AB3B29135037003877BF /* View+.swift in Sources */,
 				F1AF7AE92912F3B300CEFFBB /* Match.swift in Sources */,

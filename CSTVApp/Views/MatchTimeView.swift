@@ -22,7 +22,7 @@ struct MatchTimeView: View {
     }
     
     var body: some View {
-        Text(scheduleDescription(date))
+        Text(date.relativeDescription)
             .foregroundColor(.white)
             .font(.custom("Roboto", size: 8))
             .frame(height: 25)
@@ -32,31 +32,5 @@ struct MatchTimeView: View {
                     .fill(bgColor)
                     .cornerRadius(radius: 16, corners: [.topRight, .bottomLeft])
             )
-    }
-    
-    private func scheduleDescription(_ time: Date?) -> String {
-        guard let date = time else {
-            return "NA"
-        }
-        
-        if Date() > date {
-            return "AGORA"
-        }
-        
-        let formatter = DateFormatter()
-        formatter.locale = Locale.current
-        
-        if formatter.calendar.isDateInToday(date) {
-            formatter.dateFormat = "HH:mm"
-            return "Hoje, \(formatter.string(from: date))"
-        }
-        
-        if formatter.calendar.isDateInTomorrow(date) {
-            formatter.dateFormat = "E, HH:mm"
-        } else {
-            formatter.dateFormat = "dd.MM HH:mm"
-        }
-        
-        return formatter.string(from: date)
     }
 }
