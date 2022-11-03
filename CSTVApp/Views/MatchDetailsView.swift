@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct MatchDetailsView: View {
-    let match: Match
-    private var bgColor = Color(red: 0.086, green: 0.086, blue: 0.129) // #161621
+    @ObservedObject private var viewModel = OpponentsViewModel()
+    
+    private let match: Match
+    private let bgColor = Color(red: 0.086, green: 0.086, blue: 0.129) // #161621
     
     init(match: Match) {
         self.match = match
@@ -29,6 +31,7 @@ struct MatchDetailsView: View {
                 matchTime
                 
                 Spacer()
+                    .onAppear(perform: loadOpponents)
             }
         }
         .navigationTitle("\(match.league.name.orEmpty) \(match.serie.name.orEmpty)")
@@ -41,6 +44,10 @@ struct MatchDetailsView: View {
             .font(.custom("Roboto", size: 12))
             .padding(.top, 20)
             .padding(.bottom, 24)
+    }
+    
+    private func loadOpponents() {
+        viewModel.loadOpponents(matchId: match.id)
     }
 }
 

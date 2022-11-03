@@ -27,6 +27,8 @@
 		F1F2AB3B29135037003877BF /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB3A29135037003877BF /* View+.swift */; };
 		F1F2AB3D291353A5003877BF /* MatchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB3C291353A5003877BF /* MatchDetailsView.swift */; };
 		F1F2AB3F29135CD8003877BF /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB3E29135CD8003877BF /* Date+.swift */; };
+		F1F2AB4129135F46003877BF /* OpponentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB4029135F46003877BF /* OpponentsViewModel.swift */; };
+		F1F2AB43291361B4003877BF /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB42291361B4003877BF /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		F1F2AB3A29135037003877BF /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		F1F2AB3C291353A5003877BF /* MatchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsView.swift; sourceTree = "<group>"; };
 		F1F2AB3E29135CD8003877BF /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		F1F2AB4029135F46003877BF /* OpponentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentsViewModel.swift; sourceTree = "<group>"; };
+		F1F2AB42291361B4003877BF /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 				F1AF7AEA2912F59900CEFFBB /* Opponent.swift */,
 				F1AF7AEE2912F5BB00CEFFBB /* Serie.swift */,
 				F1AF7AEC2912F5AD00CEFFBB /* League.swift */,
+				F1F2AB42291361B4003877BF /* Team.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				F1AF7AE62912F26300CEFFBB /* MatchesViewModel.swift */,
+				F1F2AB4029135F46003877BF /* OpponentsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -283,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1AF7AE72912F26300CEFFBB /* MatchesViewModel.swift in Sources */,
+				F1F2AB4129135F46003877BF /* OpponentsViewModel.swift in Sources */,
+				F1F2AB43291361B4003877BF /* Team.swift in Sources */,
 				F1AF7AED2912F5AD00CEFFBB /* League.swift in Sources */,
 				F137A8D3291346C700BA7FE1 /* TeamsContainerView.swift in Sources */,
 				F137A8CA29133A8700BA7FE1 /* MatchTimeView.swift in Sources */,
