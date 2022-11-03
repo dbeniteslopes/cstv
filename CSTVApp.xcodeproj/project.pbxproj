@@ -29,6 +29,8 @@
 		F1F2AB3F29135CD8003877BF /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB3E29135CD8003877BF /* Date+.swift */; };
 		F1F2AB4129135F46003877BF /* OpponentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB4029135F46003877BF /* OpponentsViewModel.swift */; };
 		F1F2AB43291361B4003877BF /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB42291361B4003877BF /* Team.swift */; };
+		F1F2AB45291367EF003877BF /* MatchOpponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB44291367EF003877BF /* MatchOpponents.swift */; };
+		F1F2AB47291367FE003877BF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AB46291367FE003877BF /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		F1F2AB3E29135CD8003877BF /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		F1F2AB4029135F46003877BF /* OpponentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentsViewModel.swift; sourceTree = "<group>"; };
 		F1F2AB42291361B4003877BF /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		F1F2AB44291367EF003877BF /* MatchOpponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchOpponents.swift; sourceTree = "<group>"; };
+		F1F2AB46291367FE003877BF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 				F1AF7AEE2912F5BB00CEFFBB /* Serie.swift */,
 				F1AF7AEC2912F5AD00CEFFBB /* League.swift */,
 				F1F2AB42291361B4003877BF /* Team.swift */,
+				F1F2AB44291367EF003877BF /* MatchOpponents.swift */,
+				F1F2AB46291367FE003877BF /* Player.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 				F1F2AB4129135F46003877BF /* OpponentsViewModel.swift in Sources */,
 				F1F2AB43291361B4003877BF /* Team.swift in Sources */,
 				F1AF7AED2912F5AD00CEFFBB /* League.swift in Sources */,
+				F1F2AB47291367FE003877BF /* Player.swift in Sources */,
 				F137A8D3291346C700BA7FE1 /* TeamsContainerView.swift in Sources */,
 				F137A8CA29133A8700BA7FE1 /* MatchTimeView.swift in Sources */,
 				F1AF7AEB2912F59900CEFFBB /* Opponent.swift in Sources */,
@@ -302,6 +309,7 @@
 				F1AF7AEF2912F5BB00CEFFBB /* Serie.swift in Sources */,
 				F1AF7AB92912ECE400CEFFBB /* CSTVApp.swift in Sources */,
 				F137A8CF29133CB400BA7FE1 /* String+.swift in Sources */,
+				F1F2AB45291367EF003877BF /* MatchOpponents.swift in Sources */,
 				F1F2AB3F29135CD8003877BF /* Date+.swift in Sources */,
 				F137A8D529134A9000BA7FE1 /* MatchCardView.swift in Sources */,
 				F1F2AB3B29135037003877BF /* View+.swift in Sources */,
