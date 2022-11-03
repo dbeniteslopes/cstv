@@ -25,11 +25,22 @@ struct MatchDetailsView: View {
             
             VStack {
                 TeamsContainerView(match.opponents[0], match.opponents[1])
+                
+                matchTime
+                
                 Spacer()
             }
         }
         .navigationTitle("\(match.league.name.orEmpty) \(match.serie.name.orEmpty)")
         .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    var matchTime: some View {
+        Text(match.scheduledAt.toDate().relativeDescription)
+            .foregroundColor(.white)
+            .font(.custom("Roboto", size: 12))
+            .padding(.top, 20)
+            .padding(.bottom, 24)
     }
 }
 
