@@ -12,11 +12,13 @@ struct Player: Decodable, Identifiable {
     let nickname: String
     let firstName: String?
     let lastName: String?
+    let imageUrl: String?
     
     enum CodingKeys: String, CodingKey {
         case id
         case nickname = "name"
         case firstName = "first_name"
         case lastName = "last_name"
+        case imageUrl = "image_url"
     }
 }
