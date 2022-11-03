@@ -28,7 +28,7 @@ class MatchesViewModel: ObservableObject {
                 }
             } receiveValue: { matches in
                 let filtered = matches.filter { m in
-                    !m.opponents.isEmpty
+                    m.opponents.count == 2
                 }
                 self.matches.append(contentsOf: filtered)
                 self.matches.sort { (m1, m2) in
