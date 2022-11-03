@@ -27,8 +27,12 @@ struct MatchesView: View {
                 ScrollView {
                     LazyVStack(spacing: 0) {
                         ForEach(viewModel.matches, id: \.id) { m in
-                            MatchCardView(match: m)
-                                .padding([.horizontal, .top], 24)
+                            NavigationLink {
+                                MatchDetailsView(match: m)
+                            } label: {
+                                MatchCardView(match: m)
+                                    .padding([.horizontal, .top], 24)
+                            }
                         }
                         
                         ProgressView()
