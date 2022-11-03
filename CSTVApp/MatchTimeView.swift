@@ -15,13 +15,16 @@ struct MatchTimeView: View {
             return .gray
         }
         
-        return Date() > date ? .red : .gray
+        let red = Color(red: 0.957, green: 0.165, blue: 0.208, opacity: 1)
+        let gray = Color(red: 0.979, green: 0.979, blue: 0.979, opacity: 0.2)
+        
+        return Date() > date ? red : gray
     }
     
     var body: some View {
         Text(scheduleDescription(date))
             .foregroundColor(.white)
-            .font(.caption)
+            .font(.custom("Roboto", size: 8))
             .frame(height: 25)
             .padding(.horizontal, 8)
             .background(
