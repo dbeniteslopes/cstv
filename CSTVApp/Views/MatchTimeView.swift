@@ -28,8 +28,9 @@ struct MatchTimeView: View {
             .frame(height: 25)
             .padding(.horizontal, 8)
             .background(
-                CustomRoundedRectangle(corners: [.topRight, .bottomLeft], cornerRadius: 16)
+                Rectangle()
                     .fill(bgColor)
+                    .cornerRadius(radius: 16, corners: [.topRight, .bottomLeft])
             )
     }
     

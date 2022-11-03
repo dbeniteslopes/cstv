@@ -32,6 +32,7 @@ struct MatchesView: View {
                         }
                         
                         ProgressView()
+                            .scaleEffect(2)
                             .onAppear(perform: viewModel.loadMatches)
                     }
                 }
@@ -45,17 +46,5 @@ struct MatchesView: View {
 struct MatchesView_Previews: PreviewProvider {
     static var previews: some View {
         MatchesView()
-    }
-}
-
-struct CustomRoundedRectangle: Shape {
-    
-    var corners: UIRectCorner = .allCorners
-    var cornerRadius: CGFloat = .infinity
-    
-    func path(in rect: CGRect) -> Path {
-        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
-        
-        return Path(path.cgPath)
     }
 }
