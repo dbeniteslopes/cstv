@@ -30,23 +30,49 @@ struct MatchDetailsView: View {
                 
                 matchTime
                 
-                HStack {
-                    VStack {
+                HStack(spacing: 16) {
+                    VStack(spacing: 16) {
                         ForEach(viewModel.firstTeamPlayers, id: \.id) { p in
-                            Text(p.nickname)
+                            VStack() {
+                                Text(p.nickname)
+                                if let firstName = p.firstName {
+                                    Text("\(firstName) \(p.lastName.orEmpty)")
+                                }
+                            }
+                            .frame(maxWidth: .infinity)
+                            .background(
+                                Rectangle()
+                                    .fill(Color(red: 0.153, green: 0.149, blue: 0.224, opacity: 1))
+                                    .cornerRadius(radius: 8, corners: [.topRight, .bottomRight])
+                            )
                         }
+                        
+                        Spacer()
                     }
                     
-                    VStack {
+                    VStack(spacing: 16) {
                         ForEach(viewModel.secondTeamPlayers, id: \.id) { p in
-                            Text(p.nickname)
+                            VStack() {
+                                Text(p.nickname)
+                                if let firstName = p.firstName {
+                                    Text("\(firstName) \(p.lastName.orEmpty)")
+                                }
+                            }
+                            .frame(maxWidth: .infinity)
+                            .background(
+                                Rectangle()
+                                    .fill(Color(red: 0.153, green: 0.149, blue: 0.224, opacity: 1))
+                                    .cornerRadius(radius: 8, corners: [.topLeft, .bottomLeft])
+                            )
                         }
+                        
+                        Spacer()
                     }
                 }
                 
                 Spacer()
-                    .onAppear(perform: loadOpponents)
             }
+            .onAppear(perform: loadOpponents)
         }
         .navigationTitle("\(match.league.name.orEmpty) \(match.serie.name.orEmpty)")
         .navigationBarTitleDisplayMode(.inline)
