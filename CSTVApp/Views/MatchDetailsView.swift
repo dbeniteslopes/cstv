@@ -32,12 +32,28 @@ struct MatchDetailsView: View {
                 
                 HStack(spacing: 16) {
                     VStack(spacing: 16) {
-                        ForEach(viewModel.firstTeamPlayers, id: \.id) { p in
-                            VStack() {
-                                Text(p.nickname)
-                                if let firstName = p.firstName {
-                                    Text("\(firstName) \(p.lastName.orEmpty)")
+                        ForEach(viewModel.firstTeamPlayers, id: \.id) { player in
+                            HStack(alignment: .top, spacing: 16) {
+                                Spacer()
+                                VStack(alignment: .trailing) {
+                                    Text(player.nickname)
+                                        .foregroundColor(.white)
+                                        .font(.custom("Roboto", size: 14))
+                                        .lineLimit(1)
+                                        .padding(.top, 16)
+                                    
+                                    Text("\(player.firstName.orEmpty) \(player.lastName.orEmpty)")
+                                        .foregroundColor(Color(red: 0.424, green: 0.42, blue: 0.494, opacity: 1))
+                                        .font(.custom("Roboto", size: 12))
+                                        .lineLimit(1)
+                                        .padding(.bottom, 8)
                                 }
+                                
+                                RoundedRectangle(cornerRadius: 8)
+                                    .fill(Color(red: 0.769, green: 0.769, blue: 0.769, opacity: 1))
+                                    .frame(width: 48, height: 48)
+                                    .offset(y: -2.5)
+                                    .padding(.trailing, 12)
                             }
                             .frame(maxWidth: .infinity)
                             .background(
@@ -51,12 +67,29 @@ struct MatchDetailsView: View {
                     }
                     
                     VStack(spacing: 16) {
-                        ForEach(viewModel.secondTeamPlayers, id: \.id) { p in
-                            VStack() {
-                                Text(p.nickname)
-                                if let firstName = p.firstName {
-                                    Text("\(firstName) \(p.lastName.orEmpty)")
+                        ForEach(viewModel.secondTeamPlayers, id: \.id) { player in
+                            HStack(alignment: .top, spacing: 16) {
+                                RoundedRectangle(cornerRadius: 8)
+                                    .fill(Color(red: 0.769, green: 0.769, blue: 0.769, opacity: 1))
+                                    .frame(width: 48, height: 48)
+                                    .offset(y: -2.5)
+                                    .padding(.leading, 12)
+                                
+                                VStack(alignment: .leading) {
+                                    Text(player.nickname)
+                                        .foregroundColor(.white)
+                                        .font(.custom("Roboto", size: 14))
+                                        .lineLimit(1)
+                                        .padding(.top, 16)
+                                    
+                                    Text("\(player.firstName.orEmpty) \(player.lastName.orEmpty)")
+                                        .foregroundColor(Color(red: 0.424, green: 0.42, blue: 0.494, opacity: 1))
+                                        .font(.custom("Roboto", size: 12))
+                                        .lineLimit(1)
+                                        .padding(.bottom, 8)
                                 }
+                                
+                                Spacer()
                             }
                             .frame(maxWidth: .infinity)
                             .background(
