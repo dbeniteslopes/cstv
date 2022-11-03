@@ -11,6 +11,7 @@
 		F137A8CD29133CA700BA7FE1 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8CC29133CA700BA7FE1 /* Optional+.swift */; };
 		F137A8CF29133CB400BA7FE1 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8CE29133CB400BA7FE1 /* String+.swift */; };
 		F137A8D12913427100BA7FE1 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8D02913427100BA7FE1 /* TeamView.swift */; };
+		F137A8D3291346C700BA7FE1 /* TeamsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8D2291346C700BA7FE1 /* TeamsContainerView.swift */; };
 		F1AF7AB92912ECE400CEFFBB /* CSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AB82912ECE400CEFFBB /* CSTVApp.swift */; };
 		F1AF7ABB2912ECE400CEFFBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */; };
 		F1AF7ABD2912ECE600CEFFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AF7ABC2912ECE600CEFFBB /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		F137A8CC29133CA700BA7FE1 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
 		F137A8CE29133CB400BA7FE1 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		F137A8D02913427100BA7FE1 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		F137A8D2291346C700BA7FE1 /* TeamsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsContainerView.swift; sourceTree = "<group>"; };
 		F1AF7AB52912ECE400CEFFBB /* CSTVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AF7AB82912ECE400CEFFBB /* CSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVApp.swift; sourceTree = "<group>"; };
 		F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				F1AF7ABC2912ECE600CEFFBB /* Assets.xcassets */,
 				F1AF7ABE2912ECE600CEFFBB /* Preview Content */,
 				F137A8D02913427100BA7FE1 /* TeamView.swift */,
+				F137A8D2291346C700BA7FE1 /* TeamsContainerView.swift */,
 			);
 			path = CSTVApp;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				F1AF7ABB2912ECE400CEFFBB /* ContentView.swift in Sources */,
 				F1AF7AE72912F26300CEFFBB /* MatchesViewModel.swift in Sources */,
 				F1AF7AED2912F5AD00CEFFBB /* League.swift in Sources */,
+				F137A8D3291346C700BA7FE1 /* TeamsContainerView.swift in Sources */,
 				F137A8CA29133A8700BA7FE1 /* MatchTimeView.swift in Sources */,
 				F1AF7AEB2912F59900CEFFBB /* Opponent.swift in Sources */,
 				F137A8D12913427100BA7FE1 /* TeamView.swift in Sources */,

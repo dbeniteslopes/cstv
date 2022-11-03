@@ -25,6 +25,7 @@ struct TeamView: View {
             
             Text(team.name)
                 .foregroundColor(.white)
+                .font(.custom("Roboto", size: 10))
         }
     }
     

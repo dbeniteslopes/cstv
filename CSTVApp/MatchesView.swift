@@ -58,19 +58,9 @@ struct MatchCard: View {
                 MatchTimeView(date: match.scheduledAt.toDate())
             }
             
-            HStack(spacing: 12) {
-                TeamView(team: match.opponents[0])
-                
-                Text("vs")
-                    .foregroundColor(.white)
-                
-                TeamView(team: match.opponents[1])
-            }
-            .padding(.vertical, 18.5)
+            TeamsContainerView(match.opponents[0], match.opponents[1])
             
-            Rectangle()
-                .fill(.white.opacity(0.2))
-                .frame(height: 1)
+            divider
             
             HStack {
                 Circle()
@@ -88,6 +78,12 @@ struct MatchCard: View {
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .fill(Color(red: 0.153, green: 0.149, blue: 0.224, opacity: 1))
         )
+    }
+    
+    var divider: some View {
+        Rectangle()
+            .fill(.white.opacity(0.2))
+            .frame(height: 1)
     }
 }
 
