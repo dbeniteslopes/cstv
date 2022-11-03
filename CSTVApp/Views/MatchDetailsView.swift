@@ -23,8 +23,10 @@ struct MatchDetailsView: View {
         ZStack {
             bgColor.ignoresSafeArea()
             
-            Text("teste")
-                .foregroundColor(.white)
+            VStack {
+                TeamsContainerView(match.opponents[0], match.opponents[1])
+                Spacer()
+            }
         }
         .navigationTitle("\(match.league.name.orEmpty) \(match.serie.name.orEmpty)")
         .navigationBarTitleDisplayMode(.inline)
