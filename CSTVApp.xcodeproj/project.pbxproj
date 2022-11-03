@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10C163D29144DDA00B2D565 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C163C29144DDA00B2D565 /* PlayerView.swift */; };
 		F137A8CA29133A8700BA7FE1 /* MatchTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8C929133A8700BA7FE1 /* MatchTimeView.swift */; };
 		F137A8CD29133CA700BA7FE1 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8CC29133CA700BA7FE1 /* Optional+.swift */; };
 		F137A8CF29133CB400BA7FE1 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8CE29133CB400BA7FE1 /* String+.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F10C163C29144DDA00B2D565 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		F137A8C929133A8700BA7FE1 /* MatchTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTimeView.swift; sourceTree = "<group>"; };
 		F137A8CC29133CA700BA7FE1 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
 		F137A8CE29133CB400BA7FE1 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
@@ -153,11 +155,12 @@
 			isa = PBXGroup;
 			children = (
 				F1AF7AE22912EE1F00CEFFBB /* MatchesView.swift */,
+				F1F2AB3C291353A5003877BF /* MatchDetailsView.swift */,
 				F137A8D429134A9000BA7FE1 /* MatchCardView.swift */,
 				F137A8C929133A8700BA7FE1 /* MatchTimeView.swift */,
 				F137A8D02913427100BA7FE1 /* TeamView.swift */,
 				F137A8D2291346C700BA7FE1 /* TeamsContainerView.swift */,
-				F1F2AB3C291353A5003877BF /* MatchDetailsView.swift */,
+				F10C163C29144DDA00B2D565 /* PlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				F1AF7AE72912F26300CEFFBB /* MatchesViewModel.swift in Sources */,
 				F1F2AB4129135F46003877BF /* OpponentsViewModel.swift in Sources */,
 				F1F2AB43291361B4003877BF /* Team.swift in Sources */,
+				F10C163D29144DDA00B2D565 /* PlayerView.swift in Sources */,
 				F1AF7AED2912F5AD00CEFFBB /* League.swift in Sources */,
 				F1F2AB47291367FE003877BF /* Player.swift in Sources */,
 				F137A8D3291346C700BA7FE1 /* TeamsContainerView.swift in Sources */,

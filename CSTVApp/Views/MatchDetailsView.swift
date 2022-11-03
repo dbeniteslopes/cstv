@@ -34,86 +34,15 @@ struct MatchDetailsView: View {
                 HStack(spacing: 16) {
                     VStack(spacing: 16) {
                         ForEach(viewModel.firstTeamPlayers, id: \.id) { player in
-                            HStack(alignment: .top, spacing: 16) {
-                                Spacer()
-                                VStack(alignment: .trailing) {
-                                    Text(player.nickname)
-                                        .foregroundColor(.white)
-                                        .font(.custom("Roboto", size: 14))
-                                        .lineLimit(1)
-                                        .padding(.top, 16)
-                                    
-                                    Text("\(player.firstName.orEmpty) \(player.lastName.orEmpty)")
-                                        .foregroundColor(Color(red: 0.424, green: 0.42, blue: 0.494, opacity: 1))
-                                        .font(.custom("Roboto", size: 12))
-                                        .lineLimit(1)
-                                        .padding(.bottom, 8)
-                                }
-                                
-                                if let url = player.imageUrl, url != "" {
-                                    AsyncImage(url: URL(string: url)) { image in
-                                        image
-                                            .resizable()
-                                            .scaledToFill()
-                                            .frame(width: 48, height: 48)
-                                            .background(
-                                                Rectangle()
-                                                    .fill(Color.yellow)
-                                            )
-                                            .clipShape(RoundedRectangle(cornerRadius: 8))
-                                            .offset(y: -2.5)
-                                            .padding(.trailing, 12)
-                                    } placeholder: {
-                                        placeholder
-                                    }
-                                } else {
-                                    placeholder
-                                }
-                            }
-                            .frame(maxWidth: .infinity)
-                            .background(
-                                Rectangle()
-                                    .fill(Color(red: 0.153, green: 0.149, blue: 0.224, opacity: 1))
-                                    .cornerRadius(radius: 8, corners: [.topRight, .bottomRight])
-                            )
+                            PlayerView(player: player, columnSide: .left)
                         }
-                        
                         Spacer()
                     }
                     
                     VStack(spacing: 16) {
                         ForEach(viewModel.secondTeamPlayers, id: \.id) { player in
-                            HStack(alignment: .top, spacing: 16) {
-                                RoundedRectangle(cornerRadius: 8)
-                                    .fill(Color(red: 0.769, green: 0.769, blue: 0.769, opacity: 1))
-                                    .frame(width: 48, height: 48)
-                                    .offset(y: -2.5)
-                                    .padding(.leading, 12)
-                                
-                                VStack(alignment: .leading) {
-                                    Text(player.nickname)
-                                        .foregroundColor(.white)
-                                        .font(.custom("Roboto", size: 14))
-                                        .lineLimit(1)
-                                        .padding(.top, 16)
-                                    
-                                    Text("\(player.firstName.orEmpty) \(player.lastName.orEmpty)")
-                                        .foregroundColor(Color(red: 0.424, green: 0.42, blue: 0.494, opacity: 1))
-                                        .font(.custom("Roboto", size: 12))
-                                        .lineLimit(1)
-                                        .padding(.bottom, 8)
-                                }
-                                
-                                Spacer()
-                            }
-                            .frame(maxWidth: .infinity)
-                            .background(
-                                Rectangle()
-                                    .fill(Color(red: 0.153, green: 0.149, blue: 0.224, opacity: 1))
-                                    .cornerRadius(radius: 8, corners: [.topLeft, .bottomLeft])
-                            )
+                            PlayerView(player: player, columnSide: .right)
                         }
-                        
                         Spacer()
                     }
                 }
@@ -140,14 +69,6 @@ struct MatchDetailsView: View {
             .font(.custom("Roboto", size: 12))
             .padding(.top, 20)
             .padding(.bottom, 24)
-    }
-    
-    var placeholder: some View {
-        RoundedRectangle(cornerRadius: 8)
-            .fill(Color(red: 0.769, green: 0.769, blue: 0.769, opacity: 1))
-            .frame(width: 48, height: 48)
-            .offset(y: -2.5)
-            .padding(.trailing, 12)
     }
     
     private func loadOpponents() {
