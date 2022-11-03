@@ -25,6 +25,10 @@ struct PlayerView: View {
         columnSide == .left ? .trailing : .leading
     }
     
+    private var bgColor: Color {
+        columnSide == .left ? .yellow : .pink
+    }
+    
     var body: some View {
         HStack(alignment: .top, spacing: 16) {
             if columnSide == .left {
@@ -90,7 +94,7 @@ struct PlayerView: View {
                 .frame(width: 48, height: 48)
                 .background(
                     Rectangle()
-                        .fill(Color.yellow)
+                        .fill(bgColor)
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .offset(y: -2.5)
