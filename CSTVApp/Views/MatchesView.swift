@@ -38,6 +38,7 @@ struct MatchesView: View {
                         ProgressView()
                             .scaleEffect(2)
                             .onAppear(perform: viewModel.loadMatches)
+                            .padding(.top, 24)
                     }
                 }
             }

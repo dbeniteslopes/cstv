@@ -40,11 +40,13 @@ struct MatchCardView: View {
         HStack {
             if let url = match.league.imageUrl, url != "" {
                 AsyncImage(url: URL(string: url)) { image in
-                    image.resizable()
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 16, height: 16)
                 } placeholder: {
                     placeholder
                 }
-                .frame(maxWidth: 16, maxHeight: 16)
             } else {
                 placeholder
             }
