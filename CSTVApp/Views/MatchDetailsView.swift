@@ -31,6 +31,10 @@ struct MatchDetailsView: View {
                 
                 matchTime
                 
+                ProgressView()
+                    .scaleEffect(2)
+                    .opacity(viewModel.firstTeamPlayers.isEmpty ? 1 : 0)
+                
                 HStack(spacing: 16) {
                     VStack(spacing: 16) {
                         ForEach(viewModel.firstTeamPlayers, id: \.id) { player in
