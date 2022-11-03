@@ -59,36 +59,12 @@ struct MatchCard: View {
             }
             
             HStack(spacing: 12) {
-                VStack(spacing: 10) {
-                    AsyncImage(url: URL(string: match.opponents[0].imageUrl.orEmpty)) { image in
-                        image.resizable()
-                    } placeholder: {
-                        Circle()
-                            .fill(Color(red: 0.769, green: 0.769, blue: 0.769, opacity: 1))
-                            .frame(width: 60, height: 60)
-                    }
-                    .frame(maxWidth: 60, maxHeight: 60)
-                    
-                    Text(match.opponents[0].name)
-                        .foregroundColor(.white)
-                }
+                TeamView(team: match.opponents[0])
                 
                 Text("vs")
                     .foregroundColor(.white)
                 
-                VStack {
-                    AsyncImage(url: URL(string: match.opponents[1].imageUrl.orEmpty)) { image in
-                        image.resizable()
-                    } placeholder: {
-                        Circle()
-                            .fill(Color(red: 0.769, green: 0.769, blue: 0.769, opacity: 1))
-                            .frame(width: 60, height: 60)
-                    }
-                    .frame(maxWidth: 60, maxHeight: 60)
-                    
-                    Text(match.opponents[1].name)
-                        .foregroundColor(.white)
-                }
+                TeamView(team: match.opponents[1])
             }
             .padding(.vertical, 18.5)
             
