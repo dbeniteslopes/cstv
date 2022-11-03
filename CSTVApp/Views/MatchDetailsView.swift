@@ -54,10 +54,15 @@ struct MatchDetailsView: View {
                                     AsyncImage(url: URL(string: url)) { image in
                                         image
                                             .resizable()
+                                            .scaledToFill()
                                             .frame(width: 48, height: 48)
+                                            .background(
+                                                Rectangle()
+                                                    .fill(Color.yellow)
+                                            )
+                                            .clipShape(RoundedRectangle(cornerRadius: 8))
                                             .offset(y: -2.5)
                                             .padding(.trailing, 12)
-                                            .clipShape(RoundedRectangle(cornerRadius: 8))
                                     } placeholder: {
                                         placeholder
                                     }

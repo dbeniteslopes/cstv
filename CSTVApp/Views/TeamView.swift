@@ -14,11 +14,13 @@ struct TeamView: View {
         VStack(spacing: 10) {
             if let url = team.imageUrl, url != "" {
                 AsyncImage(url: URL(string: url)) { image in
-                    image.resizable()
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60, height: 60)
                 } placeholder: {
                     placeholder
                 }
-                .frame(maxWidth: 60, maxHeight: 60)
             } else {
                 placeholder
             }
