@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MatchDetailsView: View {
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @ObservedObject private var viewModel = OpponentsViewModel()
     
     private let match: Match
@@ -49,11 +50,20 @@ struct MatchDetailsView: View {
                                         .padding(.bottom, 8)
                                 }
                                 
-                                RoundedRectangle(cornerRadius: 8)
-                                    .fill(Color(red: 0.769, green: 0.769, blue: 0.769, opacity: 1))
-                                    .frame(width: 48, height: 48)
-                                    .offset(y: -2.5)
-                                    .padding(.trailing, 12)
+                                if let url = player.imageUrl, url != "" {
+                                    AsyncImage(url: URL(string: url)) { image in
+                                        image
+                                            .resizable()
+                                            .frame(width: 48, height: 48)
+                                            .offset(y: -2.5)
+                                            .padding(.trailing, 12)
+                                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                                    } placeholder: {
+                                        placeholder
+                                    }
+                                } else {
+                                    placeholder
+                                }
                             }
                             .frame(maxWidth: .infinity)
                             .background(
@@ -109,6 +119,14 @@ struct MatchDetailsView: View {
         }
         .navigationTitle("\(match.league.name.orEmpty) \(match.serie.name.orEmpty)")
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarLeading) {
+                Button(action: { self.mode.wrappedValue.dismiss() }) {
+                    Image("ic-arrow-left")
+                }
+            }
+        }
     }
     
     var matchTime: some View {
@@ -117,6 +135,14 @@ struct MatchDetailsView: View {
             .font(.custom("Roboto", size: 12))
             .padding(.top, 20)
             .padding(.bottom, 24)
+    }
+    
+    var placeholder: some View {
+        RoundedRectangle(cornerRadius: 8)
+            .fill(Color(red: 0.769, green: 0.769, blue: 0.769, opacity: 1))
+            .frame(width: 48, height: 48)
+            .offset(y: -2.5)
+            .padding(.trailing, 12)
     }
     
     private func loadOpponents() {

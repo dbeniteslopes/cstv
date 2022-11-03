@@ -11,7 +11,6 @@ import Combine
 class OpponentsViewModel: ObservableObject {
     @Published var firstTeamPlayers: [Player] = []
     @Published var secondTeamPlayers: [Player] = []
-    @Published var isRequestFailed = false
     private var cancellable: AnyCancellable?
     
     func loadOpponents(matchId: Int) {
@@ -20,7 +19,6 @@ class OpponentsViewModel: ObservableObject {
             .sink { completion in
                 switch completion {
                 case .failure(let error):
-                    self.isRequestFailed = true
                     print(error)
                 case .finished:
                     print("finished")

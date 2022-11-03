@@ -10,7 +10,6 @@ import Combine
 
 class MatchesViewModel: ObservableObject {
     @Published var matches: [Match] = []
-    @Published var isRequestFailed = false
     private let pageLimit = 30
     private var currentPage: Int = 1
     private var cancellable: AnyCancellable?
@@ -21,7 +20,6 @@ class MatchesViewModel: ObservableObject {
             .sink { completion in
                 switch completion {
                 case .failure(let error):
-                    self.isRequestFailed = true
                     print(error)
                 case .finished:
                     print("finished")
