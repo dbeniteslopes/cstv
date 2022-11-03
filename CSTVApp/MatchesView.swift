@@ -27,7 +27,7 @@ struct MatchesView: View {
                 ScrollView {
                     LazyVStack(spacing: 0) {
                         ForEach(viewModel.matches, id: \.id) { m in
-                            MatchCard(match: m)
+                            MatchCardView(match: m)
                                 .padding([.horizontal, .top], 24)
                         }
                         
@@ -45,45 +45,6 @@ struct MatchesView: View {
 struct MatchesView_Previews: PreviewProvider {
     static var previews: some View {
         MatchesView()
-    }
-}
-
-struct MatchCard: View {
-    let match: Match
-    
-    var body: some View {
-        VStack(spacing: 0) {
-            HStack {
-                Spacer()
-                MatchTimeView(date: match.scheduledAt.toDate())
-            }
-            
-            TeamsContainerView(match.opponents[0], match.opponents[1])
-            
-            divider
-            
-            HStack {
-                Circle()
-                    .fill(Color(red: 0.769, green: 0.769, blue: 0.769, opacity: 1))
-                    .frame(width: 16, height: 16)
-                Text("\(match.league.name.orEmpty) \(match.serie.name.orEmpty)")
-                    .foregroundColor(.white)
-                Spacer()
-            }
-            .padding(.vertical, 8)
-            .padding(.horizontal, 16)
-        }
-        .frame(maxWidth: .infinity)
-        .background(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(Color(red: 0.153, green: 0.149, blue: 0.224, opacity: 1))
-        )
-    }
-    
-    var divider: some View {
-        Rectangle()
-            .fill(.white.opacity(0.2))
-            .frame(height: 1)
     }
 }
 

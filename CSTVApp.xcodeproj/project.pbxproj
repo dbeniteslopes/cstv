@@ -12,8 +12,8 @@
 		F137A8CF29133CB400BA7FE1 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8CE29133CB400BA7FE1 /* String+.swift */; };
 		F137A8D12913427100BA7FE1 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8D02913427100BA7FE1 /* TeamView.swift */; };
 		F137A8D3291346C700BA7FE1 /* TeamsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8D2291346C700BA7FE1 /* TeamsContainerView.swift */; };
+		F137A8D529134A9000BA7FE1 /* MatchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F137A8D429134A9000BA7FE1 /* MatchCardView.swift */; };
 		F1AF7AB92912ECE400CEFFBB /* CSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AB82912ECE400CEFFBB /* CSTVApp.swift */; };
-		F1AF7ABB2912ECE400CEFFBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */; };
 		F1AF7ABD2912ECE600CEFFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AF7ABC2912ECE600CEFFBB /* Assets.xcassets */; };
 		F1AF7AC02912ECE600CEFFBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AF7ABF2912ECE600CEFFBB /* Preview Assets.xcassets */; };
 		F1AF7ACA2912ECE700CEFFBB /* CSTVAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF7AC92912ECE700CEFFBB /* CSTVAppTests.swift */; };
@@ -42,9 +42,9 @@
 		F137A8CE29133CB400BA7FE1 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		F137A8D02913427100BA7FE1 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		F137A8D2291346C700BA7FE1 /* TeamsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsContainerView.swift; sourceTree = "<group>"; };
+		F137A8D429134A9000BA7FE1 /* MatchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCardView.swift; sourceTree = "<group>"; };
 		F1AF7AB52912ECE400CEFFBB /* CSTVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AF7AB82912ECE400CEFFBB /* CSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVApp.swift; sourceTree = "<group>"; };
-		F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1AF7ABC2912ECE600CEFFBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1AF7ABF2912ECE600CEFFBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1AF7AC52912ECE700CEFFBB /* CSTVAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSTVAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				F1AF7AB82912ECE400CEFFBB /* CSTVApp.swift */,
-				F1AF7ABA2912ECE400CEFFBB /* ContentView.swift */,
 				F1AF7AE82912F3B300CEFFBB /* Match.swift */,
 				F1AF7AE22912EE1F00CEFFBB /* MatchesView.swift */,
 				F137A8C929133A8700BA7FE1 /* MatchTimeView.swift */,
@@ -121,6 +120,7 @@
 				F1AF7ABE2912ECE600CEFFBB /* Preview Content */,
 				F137A8D02913427100BA7FE1 /* TeamView.swift */,
 				F137A8D2291346C700BA7FE1 /* TeamsContainerView.swift */,
+				F137A8D429134A9000BA7FE1 /* MatchCardView.swift */,
 			);
 			path = CSTVApp;
 			sourceTree = "<group>";
@@ -241,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1AF7ABB2912ECE400CEFFBB /* ContentView.swift in Sources */,
 				F1AF7AE72912F26300CEFFBB /* MatchesViewModel.swift in Sources */,
 				F1AF7AED2912F5AD00CEFFBB /* League.swift in Sources */,
 				F137A8D3291346C700BA7FE1 /* TeamsContainerView.swift in Sources */,
@@ -254,6 +253,7 @@
 				F1AF7AEF2912F5BB00CEFFBB /* Serie.swift in Sources */,
 				F1AF7AB92912ECE400CEFFBB /* CSTVApp.swift in Sources */,
 				F137A8CF29133CB400BA7FE1 /* String+.swift in Sources */,
+				F137A8D529134A9000BA7FE1 /* MatchCardView.swift in Sources */,
 				F1AF7AE92912F3B300CEFFBB /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
