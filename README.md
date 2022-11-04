@@ -20,5 +20,6 @@ Não foram utilizadas ferramentas para geração do projeto sob demanda como Xco
 
 Algumas melhorias bem vindas no futuro.
 
-- Cache de imagens
-- Testes unitários
+- Cache de imagens para evitar requisições desnecessárias
+- Testes unitários de funcionalidades importantes como o cache
+- Utilização de ferramentas para gerar o projeto sob demanda, como o `Xcodegen`
